@@ -20,6 +20,7 @@ const server = http.createServer((req, res) => {
       break;
     default:
       path += "404.html";
+      res.statusCode = 404;
       break;
   }
 
