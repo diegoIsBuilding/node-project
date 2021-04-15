@@ -2,9 +2,17 @@ const http = require("http");
 const hostname = "localhost";
 const port = 8000;
 const fs = require("fs");
+const _ = require('lodash');
 
 const server = http.createServer((req, res) => {
-  console.log(req.url, req.method);
+// lodash 
+// the lodash library is being accessed 
+// the random() method is selected
+// the arguments is a lower bound number
+// and upper bound number 
+// EX: _.random(0,100)
+const num = _.random(0, 20);
+console.log(num);
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/html");
   // Send an html file
@@ -22,7 +30,7 @@ const server = http.createServer((req, res) => {
       path += "about.html";
       res.statusCode = 200;
       break;
-    case "/about-us":
+    case "/about-blah":
       res.statusCode = 301;
       res.setHeader("Location", "/about");
       res.end();

@@ -1,0 +1,19 @@
+npm is a tool that is automatically downloaded to your computer when 
+node is installed
+
+in this course we are going to be using npm to install packages
+visit: npmjs.com
+
+nodemon helps with the web developmet flow
+
+nodemon: is a package which helps to create live reload server 
+
+Currently with just node installed we can run <node file> 
+
+to install nodemon - enter [npm install -g nodemon] in the terminal 
+
+the package.json file is location for all the projects dependencies 
+
+going to install a helper library called [Lodash]
+
+to use the lodash library you must use an underscore _ to access the libraries functions 
